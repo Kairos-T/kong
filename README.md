@@ -4,7 +4,7 @@
 
 Kong API Gateway is an open-source API gateway that sits in front of backend services (APIs/microservices). Kong can manage how clients access these services.
 
-Kong is built on Nginx and Lua, and hence is highly performant and lighteight.
+Kong is built on Nginx and Lua, and hence is highly performant and lightweight.
 
 In summary, Kong is a traffic controller that does the following:
 
@@ -70,4 +70,3 @@ Metrics (Prometheus, Datadog, etc.)
 - Configuration can be complex in large systems
 - Advanced features require Enterprise edition
 - May be an overkill for small/simple APIs
-
