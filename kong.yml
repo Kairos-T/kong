@@ -1,0 +1,31 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+  - name: intelre-backend-service
+    url: http://192.168.189.130:8001
+    routes:
+      - name: intelre-backend-route
+        paths:
+          - /intelrebackend
+        strip_path: true
+
+  - name: intelre-frontend-service
+    url: http://host.docker.internal:8080
+    routes:
+      - name: intelre-frontend-route
+        paths:
+          - /intelrefrontend
+        strip_path: false
+
+plugins:
+  - name: cors
+    config:
+      origins:
+        - "*"
+      methods:
+        - GET
+        - POST
+        - OPTIONS
+        - DELETE
+        - PUT
