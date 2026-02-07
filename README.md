@@ -45,7 +45,7 @@ In summary, Kong is a traffic controller that does the following:
 ### Observability & Monitoring
 
 - Access logging
-Metrics (Prometheus, Datadog, etc.)
+- Metrics (Prometheus, Datadog, etc.)
 - Tracing (OpenTelemetry, Zipkin, Jaeger)
 - Request/response logging
 

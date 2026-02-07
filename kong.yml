@@ -3,7 +3,10 @@ _transform: true
 
 services:
   - name: intelre-backend-service
-    url: http://192.168.189.130:8001
+    url: http://host.docker.internal:8001
+    connect_timeout: 300000
+    write_timeout: 300000
+    read_timeout: 300000
     routes:
       - name: intelre-backend-route
         paths:
@@ -12,6 +15,9 @@ services:
 
   - name: intelre-frontend-service
     url: http://host.docker.internal:8080
+    connect_timeout: 300000
+    write_timeout: 300000
+    read_timeout: 300000
     routes:
       - name: intelre-frontend-route
         paths:
